@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+data-demo/
+data-cli/
+*.db
+*.db-shm
+*.db-wal
+sample.json
+out.pgm

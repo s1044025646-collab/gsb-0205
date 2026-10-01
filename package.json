@@ -1,0 +1,26 @@
+{
+  "name": "seamcarve-gray",
+  "version": "1.0.0",
+  "description": "灰度图内容感知缩小（接缝缩放）本地后端：API + CLI，TypeScript + Node.js + SQLite",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "seamcarve": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --experimental-sqlite dist/server.js",
+    "dev": "node --experimental-sqlite --experimental-strip-types src/server.ts",
+    "cli": "node --experimental-sqlite --experimental-strip-types src/cli/index.ts",
+    "test": "tsc -p tsconfig.json && node --experimental-sqlite --test \"dist/src/**/*.test.js\"",
+    "demo": "tsc -p tsconfig.json && node --experimental-sqlite dist/scripts/demo.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}
