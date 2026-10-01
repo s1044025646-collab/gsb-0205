@@ -1,0 +1,11 @@
+{
+  "imageId": "在 import 结果中替换为真实 imageId",
+  "targetWidth": 3,
+  "targetHeight": 2,
+  "order": "width-first",
+  "energyConfig": {
+    "gradient": "l1",
+    "boundary": "zero",
+    "preferWeight": 0
+  }
+}

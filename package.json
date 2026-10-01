@@ -1,0 +1,25 @@
+{
+  "name": "seamcarve-grayscale",
+  "version": "1.0.0",
+  "description": "Windows 本地灰度图接缝缩放（seam carving）与保护区域追踪后端：仅 API 与 CLI",
+  "type": "module",
+  "main": "dist/server/api.js",
+  "bin": {
+    "seamcarve": "dist/cli/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test --test-reporter=spec \"dist-test/**/*.test.js\"",
+    "start": "tsc -p tsconfig.json && node dist/server/api.js",
+    "demo": "tsc -p tsconfig.json && node dist/demo.js",
+    "cli": "tsc -p tsconfig.json && node dist/cli/cli.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "5.9"
+  }
+}
